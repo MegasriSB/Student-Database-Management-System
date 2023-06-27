@@ -1,0 +1,312 @@
+.Heading2{
+  position: absolute;
+  width: 492px;
+  height: 72px;
+  right: 800px;
+  top: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  /* identical to box height */
+  color:#2ca2b0 ;
+}
+
+.user{
+  width: 240px;
+  height: 540px;
+  background: #ffffff;
+  position: relative;
+  top:130px;
+  left:17%;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+}
+
+.profile-img{
+  width: 175px;
+  height: 175px;
+  position: relative;
+  top: 45px;
+  left:70px;
+  border-radius: 5px;
+  font-size: 120px;
+  color:#00847b;
+}
+
+.personal-info{
+  background: black;
+  position: relative;
+  width: 550px;
+  height: 330px;
+  left: 35%;
+  bottom: 410px;
+  background: #ffffff;
+  -webkit-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  border-radius: 5px;
+}
+
+span{
+  font-weight: bold;
+}
+
+.details{
+  position: relative;
+  left:40px;
+  top:50px;
+}
+
+td{
+  padding-right: 20px;
+  padding-bottom: 7px;
+}
+
+.Heading3{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 72px;
+  /* identical to box height */
+  color:#00847b;
+  position: relative;
+  top:5px;
+  left:40px;
+}
+
+.details2{
+  position: relative;
+  top:-2px;
+  left:90px
+}
+
+.Recent-Projects{
+  background: black;
+  position: relative;
+  width: 550px;
+  height: 190px;
+  left: 35%;
+  bottom: 390px;
+  background: #ffffff;
+  -webkit-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  border-radius: 5px;
+}
+
+.oli{
+  position: relative;
+  left: 70px;
+}
+
+.user2{
+  width: 320px;
+  height: 540px;
+  background: #ffffff;
+  position: relative;
+  bottom:930px;
+  left:75%;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+}
+
+.list-group-item{
+  width: 250px;
+  position: relative;
+  left: 41px;
+
+}
+.certi
+{
+  position:relative;
+  left:50px;
+}
+
+.navigation{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 180px;
+  border-radius: 10px;
+  border-left: 5px solid #02ccc0;
+  box-sizing: initial;
+  background: #02ccc0;
+  transition: width 0.5s;
+  overflow-x: hidden;
+}
+
+.Heading1 {
+  position: absolute;
+  width: 492px;
+  height: 72px;
+  right: 570px;
+  top: 15px;
+ font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  /* identical to box height */
+  color:#2ca2b0 ;
+}
+
+.navigation.active{
+  width: 70px;
+
+}
+.icon{
+  position: relative;
+  bottom: 200px;
+}
+
+.navigation ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius:20px;
+  border-bottom-left-radius:20px;
+}
+
+.navigation ul li b:nth-child(1){
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width:100%;
+  background: #c8e7ea;
+  display: none;
+}
+
+.navigation ul li b:nth-child(1)::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background: #02ccc0;
+}
+
+.navigation ul li b:nth-child(2){
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width:100%;
+  display: none;
+  background: #c8e7ea;
+}
+
+.navigation ul li b:nth-child(2)::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  background: #02ccc0;
+}
+
+.navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2)
+{
+  display: block;
+
+}
+
+.navigation ul li.active{
+  background: #c8e7ea;
+}
+
+.navigation ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #d0ebee;
+}
+
+.navigation ul li.active a{
+  color: #02ccc0;
+}
+
+.navigation ul li a .icon{
+  position: relative;
+  top:5px;
+  display: block;
+  min-width: 60px;
+  height: 62px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation ul li a i{
+  font-size: 1.5em;
+
+}
+
+.navigation ul li a .title{
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: normal;
+}
+.title{
+  font-weight: 400;
+}
+.toggle{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #02ccc0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle.active{
+  background: #02ccc0;
+}
+
+.toggle i{
+  position: absolute;
+  color: #fefbf6;
+  font-size: 34px;
+  display: none;
+}
+
+.toggle i.open,
+.toggle.active i.close
+{
+  display: block;
+}
+
+.toggle i.close,
+.toggle.active i.open{
+
+  display: none;
+}

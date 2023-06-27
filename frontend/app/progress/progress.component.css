@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+.navigation {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 180px;
+  border-radius: 10px;
+  border-left: 5px solid #02ccc0;
+  box-sizing: initial;
+  background: #02ccc0;
+  transition: width 0.5s;
+  overflow-x: hidden;
+}
+
+.Heading1 {
+  position: absolute;
+
+  width: 592px;
+  height: 72px;
+  right: 690px;
+  top: 45px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  /* identical to box height */
+  color: #257a84;
+}
+
+.navigation.active {
+  width: 70px;
+}
+
+.icon {
+  position: relative;
+  bottom: 200px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.navigation ul li b:nth-child(1) {
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width: 100%;
+  background: #c8e7ea;
+  display: none;
+}
+
+.navigation ul li b:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background: #02ccc0;
+}
+
+.navigation ul li b:nth-child(2) {
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  display: none;
+  background: #c8e7ea;
+}
+
+.navigation ul li b:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  background: #02ccc0;
+}
+
+.navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2) {
+  display: block;
+}
+
+.navigation ul li.active {
+  background: #c8e7ea;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #c8e7ea;
+}
+
+.navigation ul li.active a {
+  color: #02ccc0;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  top: 5px;
+  display: block;
+  min-width: 60px;
+  height: 62px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation ul li a i {
+  font-size: 1.5em;
+}
+
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: normal;
+}
+
+.toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #02ccc0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle.active {
+  background: #02ccc0;
+}
+
+.toggle i {
+  position: absolute;
+  color: #fefbf6;
+  font-size: 34px;
+  display: none;
+}
+
+.toggle i.open,
+.toggle.active i.close {
+  display: block;
+}
+
+.toggle i.close,
+.toggle.active i.open {
+  display: none;
+}
+
+.procard {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  width: 340px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  left: 240px;
+}
+
+.procard-image img {
+  position: relative;
+  width: 340px;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  margin-left: -20px;
+}
+
+.profile-image img {
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-top: -75px;
+  display: block;
+  margin-left: 90px;
+  border-radius: 100px;
+  border: 10px solid #fff;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.profile-image img:hover {
+  transform: scale(1.1);
+}
+
+.procard-content h3 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.procard-content p {
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 20px 5px 20px;
+}
+
+.texth5 {
+  position: relative;
+  left: 57px;
+  line-height: 1.9;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.texth4 {
+  font-size: 10px;
+  position: relative;
+  top: 10px;
+  /* right: 10px; */
+  text-align: center;
+  left: 5px;
+  font-weight: 900;
+}
+
+.b-skills {
+  /* border-top: 1px solid black; */
+  /* padding-top: 1px; */
+  text-align: center;
+  position: relative;
+  top: -50px;
+}
+
+/* .b-skills:last-child {
+  margin-bottom: -30px;
+} */
+
+.b-skills h2 {
+  margin-bottom: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.skill-item {
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.chart-container {
+  position: relative;
+  left: 600px;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  margin: 0px;
+  bottom: 400px;
+  /* display: flex; */
+}
+
+.skill-item .chart,
+.skill-item .chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.skill-item .chart:before {
+  content: "";
+  width: 0;
+  margin: 0px;
+  height: 100%;
+}
+
+.skill-item .chart:before,
+.skill-item .percent {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skill-item .percent {
+  position: relative;
+  line-height: 1;
+  font-size: 40px;
+  font-weight: 900;
+  z-index: 2;
+  top:175px;
+  left:30px;
+}
+
+.skill-item .percent:after {
+  content: attr(data-after);
+  font-size: 20px;
+}
+
+p {
+  font-weight: 900;
+  position: relative;
+  left: 570px;
+  bottom:290px;
+}
+
+.arrange1 {
+  position: relative;
+  top:-150px;
+}
+
+.arrange2 {
+  position: relative;
+  top:-100px;
+}
+
+.row{
+  width: 1100px;
+  height: 100px;
+}
+.Profile {
+height: 200px;
+width: 430px;
+/* background: #25e1d426; */
+position: relative;
+top: -30px;
+left: 258px;
+border-radius: 20px;
+-webkit-box-shadow: 1px 1px 7px 0px rgba(102,93,102,1);
+-moz-box-shadow: 1px 1px 7px 0px rgba(102,93,102,1);
+box-shadow: 1px 1px 7px 0px rgba(102,93,102,1);
+}
+.texth2{
+position: relative;
+top: 10px;
+text-align: center;
+}
+
+.texth3{
+position: relative;
+top: -90px;
+left: 160px;
+}
+
+img{
+position: relative;
+left: 20px;
+}
+

@@ -1,0 +1,35 @@
+<form [formGroup]="loginform">
+  <div class="inner">
+      <h1>Your Progress Our Pursuit!</h1>
+
+      <div class="form">
+          <div class="container">
+              <h2>Login</h2>
+              <div class="formgroup">
+              <div class="inputBx">
+                  <p>Username</p>
+                  <div class="input-group flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+                      <input type="text" class="form-control" placeholder="Type your RollNo" aria-label="Username"
+                          aria-describedby="addon-wrapping" name="rusername" id="username" formControlName="username">
+                  </div>
+                  <br>
+                  <p>Password</p>
+                  <div class="input-group flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock"></i></span>
+                      <input type="password" id="password" placeholder="Enter your DOB [DD-MM-YYYY]"
+                      class="form-control" aria-label="Username" aria-describedby="addon-wrapping"
+                      name="rpassword" formControlName="password">
+                  </div>
+                  <br>
+                  <br>
+                  <button class="btn" type="submit" value="login-user" (click)="login()">Log In</button>
+                  <br><br>
+              </div>
+              </div>
+          </div>
+      </div>
+      <img [src]=piclogin alt="" class="im">
+  </div>
+</form>
+

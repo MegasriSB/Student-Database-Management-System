@@ -1,0 +1,38 @@
+<form [formGroup]="signupform" id="formData" #userData="ngForm" >
+  <div class="inner">
+    <div class="sign-form">
+      <h2 class="h21"> Sign up</h2>
+      <div [ngClass]="className" roles="alert">
+        {{message}}    <a routerLink="/login" styles="cursor: pointer;">Login Here</a>
+      </div>
+      <div class="container">
+        <div class="formgroup">
+          <p>Email</p>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="Type your email" aria-label="Username"
+              aria-describedby="addon-wrapping" name="email" required ngModel formControlName="password">
+          </div>
+          <br>
+          <p>Username</p>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+            <input type="text" class="form-control" placeholder="Type your username" aria-label="Username"
+              aria-describedby="addon-wrapping" name="username" required ngModel formControlName="username">
+          </div>
+          <br>
+          <p>Password</p>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock"></i></span>
+            <input type="password" class="form-control" placeholder="Enter your DOB" onfocus="(this.type='date')"
+              aria-label="Username" aria-describedby="addon-wrapping" name="password" required ngModel formControlName="password">
+          </div>
+        </div>
+        <br>
+        <br>
+        <button class="btn btn1" type="submit" value="Register" (click)="signup()">Register</button>
+      </div>
+    </div>
+    <img class= "img" [src]= sign1 alt="">
+  </div>
+</form>

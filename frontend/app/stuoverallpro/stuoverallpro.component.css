@@ -1,0 +1,412 @@
+.ocards{
+  position: relative;
+  top: 130px;
+  left: 160px;
+  display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.ocard-individual{
+   background: white;
+ width: 350px;
+ height: 180px;
+ margin-right: 65px;
+ background-size: cover;
+ border-radius: 15px;
+ text-align: center;
+ color: #1e6d76;
+ /* box-shadow: 5px 5px 5px 5px gray; */
+ -webkit-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+}
+
+.o-icon{
+   position: relative;
+   top: 55px;
+   left: 110px;
+}
+
+.o-icon1{
+   font-size: 60px;
+}
+
+.o-rank-h1{
+   font-family: "Rubik", sans-serif;
+   font-size: 40px;
+   color: #333133;
+   font-size: 55px;
+   position: relative;
+   right: 105px;
+   bottom: 10px;
+}
+
+.o-place-p1{
+   font-weight:600;
+   font-size: 18px;
+   position: relative;
+   bottom: 10px;
+   right: 40px;
+}
+
+.o-place-p2{
+   font-weight:600;
+   font-size: 18px;
+   position: relative;
+   bottom: 10px;
+   right: 70px;
+}
+
+.o-place-p3{
+   font-weight:600;
+   font-size: 18px;
+   position: relative;
+   bottom: 10px;
+   right: 65px;
+}
+
+
+
+ .skill-bars{
+   padding: 25px 30px;
+   width: 565px;
+   background: #fff;
+   box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+   border-radius: 10px;
+   position: relative;
+   left: 245.5px;
+
+ }
+
+ .chart1{
+   position: relative;
+   top: 190px;
+ }
+
+ .chart2{
+   position: relative;
+   top:-100px;
+   left:860px
+ }
+ .skill-bars .bar{
+   margin: 20px 0;
+ }
+ .skill-bars .bar:first-child{
+   margin-top: 0px;
+ }
+ .skill-bars .bar .info{
+   margin-bottom: 5px;
+ }
+ .skill-bars .bar .info span{
+   font-weight: 500;
+   font-size: 17px;
+   opacity: 0;
+   animation: showText 0.5s 1s linear forwards;
+ }
+ @keyframes showText {
+   100%{
+     opacity: 1;
+   }
+ }
+ .skill-bars .bar .progress-line{
+   height: 10px;
+   width: 100%;
+   background: #f0f0f0;
+   position: relative;
+   transform: scaleX(0);
+   transform-origin: left;
+   border-radius: 10px;
+   box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+               0 1px rgba(255,255,255,0.8);
+   animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+ }
+ @keyframes animate {
+   100%{
+     transform: scaleX(1);
+   }
+ }
+ .bar .progress-line span{
+   height: 100%;
+   position: absolute;
+   border-radius: 10px;
+   transform: scaleX(0);
+   transform-origin: left;
+   background: #02ccc0;
+   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+ }
+ .bar .progress-line.Semester1 span{
+   width: 90%;
+ }
+ .bar .progress-line.Semester2 span{
+   width: 60%;
+ }
+ .bar .progress-line.Semester3 span{
+   width: 85%;
+ }
+ .bar .progress-line.Semester4 span{
+   width: 50%;
+ }
+ .bar .progress-line.Semester5 span{
+   width: 75%;
+ }
+ .bar .progress-line.Semester6 span{
+   width: 85%;
+ }
+ .bar .progress-line.Semester7 span{
+   width: 68%;
+ }
+ .bar .progress-line.Semester8 span{
+   width: 100%;
+ }
+ .progress-line span::before{
+   position: absolute;
+   content: "";
+   top: -10px;
+   right: 0;
+   height: 0;
+   width: 0;
+   border: 7px solid transparent;
+   border-bottom-width: 0px;
+   border-right-width: 0px;
+   border-top-color: #000;
+   opacity: 0;
+   animation: showText2 0.5s 1.5s linear forwards;
+ }
+ .progress-line span::after{
+   position: absolute;
+   top: -28px;
+   right: 0;
+   font-weight: 500;
+   background: #000;
+   color: #fff;
+   padding: 1px 8px;
+   font-size: 12px;
+   border-radius: 3px;
+   opacity: 0;
+   animation: showText2 0.5s 1.5s linear forwards;
+ }
+ @keyframes showText2 {
+   100%{
+     opacity: 1;
+   }
+ }
+ .progress-line.Semester1 span::after{
+   content: "90%";
+ }
+ .progress-line.Semester2 span::after{
+   content: "60%";
+ }
+ .progress-line.Semester3 span::after{
+   content: "85%";
+ }
+ .progress-line.Semester4 span::after{
+   content: "50%";
+ }
+ .progress-line.Semester5 span::after{
+   content: "75%";
+ }
+ .progress-line.Semester6 span::after{
+   content: "85%";
+ }
+ .progress-line.Semester7 span::after{
+   content: "68%";
+ }
+ .progress-line.Semester8 span::after{
+   content: "100%";
+ }
+
+
+ .navigation{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 180px;
+  border-radius: 10px;
+  border-left: 5px solid #02ccc0;
+  box-sizing: initial;
+  background: #02ccc0;
+  transition: width 0.5s;
+  overflow-x: hidden;
+}
+
+.Heading1 {
+  position: absolute;
+  width: 492px;
+  height: 72px;
+  right: 570px;
+  top: 15px;
+ font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  /* identical to box height */
+  color:#2ca2b0 ;
+}
+
+.navigation.active{
+  width: 70px;
+
+}
+.icon{
+  position: relative;
+  bottom: 200px;
+}
+
+.navigation ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius:20px;
+  border-bottom-left-radius:20px;
+}
+
+.navigation ul li b:nth-child(1){
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width:100%;
+  background: #c8e7ea;
+  display: none;
+}
+
+.navigation ul li b:nth-child(1)::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background: #02ccc0;
+}
+
+.navigation ul li b:nth-child(2){
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width:100%;
+  display: none;
+  background: #c8e7ea;
+}
+
+.navigation ul li b:nth-child(2)::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  background: #02ccc0;
+}
+
+.navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2)
+{
+  display: block;
+
+}
+
+.navigation ul li.active{
+  background: #c8e7ea;
+}
+
+.navigation ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #d0ebee;
+}
+
+.navigation ul li.active a{
+  color: #02ccc0;
+}
+
+.navigation ul li a .icon{
+  position: relative;
+  top:5px;
+  display: block;
+  min-width: 60px;
+  height: 62px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation ul li a i{
+  font-size: 1.5em;
+
+}
+
+.navigation ul li a .title{
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: normal;
+}
+.title{
+  font-weight: 400;
+}
+.toggle{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #02ccc0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Heading2{
+  position: absolute;
+  width: 492px;
+  height: 72px;
+  right: 800px;
+  top: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  /* identical to box height */
+  color:#2ca2b0 ;
+}
+.toggle.active{
+  background: #02ccc0;
+}
+
+.toggle i{
+  position: absolute;
+  color: #fefbf6;
+  font-size: 34px;
+  display: none;
+}
+
+.toggle i.open,
+.toggle.active i.close
+{
+  display: block;
+}
+
+.toggle i.close,
+.toggle.active i.open{
+  display: none;
+}
